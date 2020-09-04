@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background: #9966ff;
+    font-size:14px;
+    line-height:22px;
+    color:#555555;
+}
+
+.bold{
+    font-weight:700;
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.semi_bold{
+    font-weight:500;
+    font-size:16px;
+}
+
+.CV{
+    width:800px;
+    height:auto;
+    display:flex;
+    margin:50px auto;
+}
+
+.CV .CV_Left{
+    width:280px;
+    background:#4700b3;
+}
+
+.CV .CV_Left .CV_Profile{
+    width: 100%;
+    height: 280px;
+}
+
+.CV .CV_Left .CV_Profile img{
+    width:100%;
+    height:100%;
+}
+
+.CV .CV_Left .CV_Content{
+    padding: 0.25%;
+}
