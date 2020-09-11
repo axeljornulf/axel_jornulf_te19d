@@ -15,10 +15,12 @@
     border:5px solid;
     border-color: #4700b3;
     padding-right:5px;
+    background:rgba(0, 102, 204, 0.5)
 }
 
 body{
-    background: #9966ff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 35%, rgba(0,212,255,1) 100%);
     font-size:14px;
     line-height:22px;
     color:#555555;
@@ -44,7 +46,11 @@ body{
 
 .CV .CV_Left{
     width:280px;
-    background:#ff99ff;
+    background:rgba(0, 102, 204, 0.5)
+}
+
+a{
+    color:black;
 }
 
 .CV .CV_Left .CV_Profile{
@@ -68,4 +74,23 @@ body{
 
 .CV .text .paragraphs{
     padding-top:10px;
+}
+
+.CV .text h2{
+    padding-top:7px;
+}
+
+#list{
+    margin-top:20px;
+}
+
+#list ul li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
 }
