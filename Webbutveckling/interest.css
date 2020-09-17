@@ -10,36 +10,48 @@ body, html{
 }
 
 .bg{
-    background-image: url("shawty_got_low.gif");
+    background-image: url("bg.png");
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+    image-rendering: smooth;
 }
 
-.about_section{
-    position:relative;
+.interests{
+    position: relative;
     text-align: center;
     color:white;
+    font-size:25px;
+    top:-10%;
 }
 
 .text{
     position: absolute;
+    top:40%;
     left:50%;
     transform:translate(-50%, 50%);
-    font-size:33px;
-    background-color:rgba(204, 102, 255, 0.5);
+    background-color:rgba(102, 102, 153, 0.5);
     padding:55px;
     text-shadow:3px 3px black;
-    box-shadow: 1px -10px 10px rgba(34,34,34,0.6);
 }
 
 .redirect{
     position: absolute;
     bottom:8px;
     padding-left:750px;
+    bottom:10%;
 }
 
-a{
-    color:black;
+.redirect a{
+    color:white;
+}
+
+.list{
+    padding-top:10px;
+}
+
+.list ul li{
+    list-style-type: circle;
+    list-style-position: initial;
 }
