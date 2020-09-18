@@ -94,4 +94,29 @@ a{
     bottom:0;
     width:100%;
     background-color:rgba(128, 128, 128, 0.5);
+    color:black;
+}
+
+.bottom{
+    position: absolute;
+    font-size:100px;
+    color:white;
+    font-weight: bolder;
+    padding-top:10%;
+    margin-left:20%;
+    -webkit-text-stroke: 6px black;
+    font-family: "Candara", sans-serif;
+}
+
+.logo{
+    position: absolute;
+    width:100px;
+    top:1%;
+    padding-left:13.5%;
+}
+
+.logo img{
+    float: left;
+    margin:100px;
+    width:750px;
 }
