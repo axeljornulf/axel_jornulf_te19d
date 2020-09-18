@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin:0 auto;
+    padding:0 auto;
     box-sizing: border-box;
     list-style: none;
 }
@@ -19,11 +19,28 @@
 }
 
 body{
+    position:static;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 35%, rgba(0,212,255,1) 100%);
     font-size:14px;
     line-height:22px;
     color:#555555;
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim{
+    from{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    to{
+        background: rgb(0,31,36);
+        background: linear-gradient(90deg, rgba(0,31,36,1) 0%, rgba(9,121,22,1) 35%, rgba(0,212,255,0) 100%);
+    }
 }
 
 .bold{
@@ -38,15 +55,16 @@ body{
 }
 
 .CV{
-    width:800px;
-    height:auto;
+    position: relative;
+    float:right;
+    padding-right:10px;
     display:flex;
     margin:50px auto;
 }
 
 .CV .CV_Left{
     width:280px;
-    background:rgba(0, 102, 204, 0.5)
+    background:rgba(0, 102, 204, 0.5);
 }
 
 a{
@@ -60,13 +78,12 @@ a{
     border-color:blueviolet;
 }
 
-.CV .CV_Left .CV_Profile img{
+.CV_Profile img{
     width:100%;
     height:100%;
 }
 
 .CV .CV_Left .CV_Content{
-    padding: 0.25%;
     border: 5px solid;
     border-color:goldenrod;
     font-family:'Bahnschrift', sans-serif;
@@ -76,7 +93,7 @@ a{
     padding-top:10px;
 }
 
-.CV .text h2{
+.text h2{
     padding-top:7px;
 }
 
@@ -98,25 +115,20 @@ a{
 }
 
 .bottom{
-    position: absolute;
-    font-size:100px;
+    position: absolute;;
+    font-size:90px;
     color:white;
     font-weight: bolder;
-    padding-top:10%;
-    margin-left:20%;
+    padding-top:650px;
+    padding-left:120px;
     -webkit-text-stroke: 6px black;
     font-family: "Candara", sans-serif;
 }
 
-.logo{
-    position: absolute;
-    width:100px;
-    top:1%;
-    padding-left:13.5%;
-}
-
 .logo img{
-    float: left;
-    margin:100px;
-    width:750px;
+    position: relative;
+    float:left;
+    left:400px;
+    width:700px;
+    padding-top:100px;
 }
