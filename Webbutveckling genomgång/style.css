@@ -1,17 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:royalblue;
+}
+
 .container{
     display: flex;
+    margin:5%;
 }
 
 .item{
+    /*flex display i varje klass för ngn anledning*/
+    display:flex;
     flex-grow: 1;
     height:100px;
     background-color:lightblue;
+    justify-content: center;
     border-radius: 3px;
     box-sizing: border-box;
     border: 1px solid;
     box-shadow: 0px 2px 2px black;
+    align-items:center;
+    font-size:25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .item + .item{
     margin-left:2%;
+}
+
+.container-2{
+    width:1vh;
+    height:1vh;
+    background-color:teal;
+}
+
+a:link{
+    text-decoration:none;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+a:hover{
+    color:red;
+    background-color: yellowgreen;
 }
