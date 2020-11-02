@@ -29,3 +29,43 @@ body{
 .flex_boxes1 + .flex_boxes1{
     margin-left:2%;
 }
+
+.secondary_container{
+    background-color: rgba(102,102,100,0.3);
+    margin:2%;
+    padding:400px;
+    margin-left:40%;
+    padding-right:26.4%;
+    height:100px;
+    float: left;
+}
+
+.list{
+    position: absolute;
+    background-color: rgba(102,102,100,0.3);
+    padding:400px;
+    padding-right:5%;
+    margin-top:10%;
+    margin:2%;
+    float:left;
+    height:100px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+a:hover{
+    color:purple;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:auto;
+}
