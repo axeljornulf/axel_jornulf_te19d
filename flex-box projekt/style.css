@@ -40,6 +40,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .list_box{
@@ -55,7 +56,38 @@ body{
 }
 
 .list_box,img{
-    padding-left:40px;
+    justify-content: center;
+}
+
+.list_box:hover{
+    background-color:rgb(94, 94, 207);
+}
+
+.secondary_container{
+    position: absolute;
+    display:block;
+    float:left;
+    width:100px;
+    height:auto;
+}
+
+video{
+    margin-left: -10%;
+    padding-left:850px;
+    position: absolute;
+    display:block;
+}
+
+.textbox{
+    background-color: rgba(102, 102, 153,0.3);
+    position: relative;
+    bottom:300px;
+    font-size:20px;
+    text-align:center;
+    width:640px;
+    height:200px;
+    margin-left:660px;
+    z-index: -1;
 }
 
 a:link{
