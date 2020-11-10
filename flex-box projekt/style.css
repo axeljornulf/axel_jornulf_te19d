@@ -72,8 +72,8 @@ body{
 }
 
 video{
-    margin-left: -10%;
-    padding-left:850px;
+    margin-left: -15%;
+    padding-left:840px;
     position: absolute;
     display:block;
 }
@@ -81,13 +81,14 @@ video{
 .textbox{
     background-color: rgba(102, 102, 153,0.3);
     position: relative;
-    bottom:300px;
+    bottom:130px;
     font-size:20px;
     text-align:center;
     width:640px;
     height:200px;
-    margin-left:660px;
+    margin-left:630px;
     z-index: -1;
+    color:indigo;
 }
 
 a:link{
@@ -100,6 +101,10 @@ a:active{
 
 a:hover{
     color:purple;
+}
+
+a{
+    color:maroon;
 }
 
 footer{

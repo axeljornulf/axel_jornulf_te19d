@@ -5,23 +5,30 @@
         <title>TG List</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="style.css">
+        <script>
+            function textMessage(){
+                var x = document.createElement("SCRIPT");
+                var t = document.createTextNode("alert('Coming soon!')");
+                x.appendChild(t);
+                document.body.appendChild(x);
+            }
+        </script>
     </head>
     <body>
         <div class="primary_container"> <!--Flex-box container-->
-            <div class="flex_boxes1"> <a href="List/list.html">List of characters</a> </div>
-            <div class="flex_boxes1"> <a href="About/Ab.html">About Tokyo Ghoul</a></div>
-            <div class="flex_boxes1"> <a href="Where/TG.html">Products</a> </div>
+            <div class="flex_boxes1"> <a href="#list" onclick="textMessage()">List of characters</a> </div>
+            <div class="flex_boxes1"> <a href="#about" onclick="textMessage()">About Tokyo Ghoul</a></div>
+            <div class="flex_boxes1"> <a href="#where" onclick="textMessage()">Products</a> </div>
         </div>
         <video controls loop autoplay muted>
             <source src="images/trailer.mp4" type="video/mp4" controls autoplay>
             Your browser does not support the video tag.
         </video>
         <div class="list">
-            <div class="list_box"> <img src="images/donny's_theme_cover.png"> </div>
-            <div class="list_box">  </div>
-            <div class="list_box">  </div>
-            <div class="list_box">  </div>
-            <div class="list_box">  </div>
+            <div class="list_box" title="Find out more about Ken Kaneki"> <img src="images/donny's_theme_cover.png"> </div>
+            <div class="list_box" title="Find out more about Kishou Arima"> <img src="images/arima.png"> </div>
+            <div class="list_box" title="Find out more about Juuzou Suzuya"> <img src="images/juuzou.png"> </div>
+            <div class="list_box" title="Check out our merch!"> <img src="images/merch.png"> </div>
             <div class="textbox">
                 <h2>Watch the latest trailer of Tokyo Ghoul:RE</h2>
                 <p>The anime is rightfully owned by the studio Pierrot, this wesbite</p>
