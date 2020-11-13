@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="style.css">
         <script>
-            function textMessage(){
+            function textMessage(){ //funktionen skapar en fönster med meddelandet "Coming soon!"
                 var x = document.createElement("SCRIPT");
                 var t = document.createTextNode("alert('Coming soon!')");
                 x.appendChild(t);
@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="primary_container"> <!--Flex-box container-->
-            <div class="flex_boxes1"> <a href="#list" onclick="textMessage()">List of characters</a> </div>
+            <div class="flex_boxes1"> <a href="gallery.html">Gallery</a> </div>
             <div class="flex_boxes1"> <a href="#about" onclick="textMessage()">About Tokyo Ghoul</a></div>
             <div class="flex_boxes1"> <a href="#where" onclick="textMessage()">Products</a> </div>
         </div>
@@ -41,5 +41,5 @@
             </div>
         </div>
     </body>
-    <footer>Copyright 2020</footer>
+    <footer>Copyright Jonas Nordström 2020</footer>
 </html>
