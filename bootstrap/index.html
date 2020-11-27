@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap.css"> <!--Bootstrap-->
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--JQuery stuff-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--javascript-->
         <title> Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="caption">Caption</div>
-        <div class="btn-dark">BTN-DARK</div>
-        <div class="container" style="background-color:lightcoral;">
-            <h1>Detta är en container</h1>
+        <div class="btn-dark" style="justify-content: center;">This is a button, it is dark.</div>
+        <div class="container">
+            <h1>Detta är en element</h1>
+            <div class="container" style="background-color:lightskyblue;"> <!--Byter färg till light sky blue-->
+                <h2>Jag gillar den här container/element</h2>
+                <p>Det är en mycket fin container. Så fin att den är blå nu.</p>
+                <p>En HTML element kan också vara tags som paragraph taggarna "p"</p>
+                <p>En annan exempel är en länk, <a href="https://gurka.se/">som det här</a></p>
             </div>
         </div>
 
-        <!-- Byt ut defaulkt färg för 5-6 elementer -->
+        <div class="container">
+            <h1>En grid</h1>
+            <p>Här har vi en exempel på en "grid", där 2 stycken paragrapher</p>
+            <p>står nära varandra. På småa enheter kommer de att stacka på varandra.</p>
+            <div class="row"> <!--Använder row klassen från bootstrap-->
+                <div class="col-sm-6" style="background-color:rgb(248, 136, 215)";>
+                    This is a wall of text please ignore it I am just rambling
+                    oh you're approaching me? I can't beat the shit out of you
+                    without getting closer.
+                    I've run out of stuff to ramble. Um.... How was your day?
+                    I like cheddar, actually I love cheddar.
+                </div>
+                <div class="col-sm-6" style="background-color: lightslategray;"> <!--2 st kolumner från bootstrap-->
+                    How to make eggsbenedict:
+                    To make eggsbenedict you need hollondaise sauce, to make it you
+                    need 2 egg yolkes, some lemon juice, salt, pepper and butter.
+                    Put the egg yolkes in a bowl over steaming hot water and beat the
+                    yolkes...
+                </div>
+            </div>
+        </div>
 
-        <a href="https://www.google.com"> Google länk </a>
+        <div class="container">
+            <h1>HTTP</h1>
+            <p>HTTP står för "Hyper Text Transfer Protocol" och används</p>
+            <p>för att klienter och sevrar ska kunna kommunicera med varandra</p>
+            <p>På the world wide web.</p>
+            <img src="http.PNG"> <!--Bild-->
+        </div>
+
+        <div class="container">
+            <h1>HTTPS</h1>
+            <p>HTTPS, liksom HTTP, betyder "Hyper Text Transfer Protocol Secure".</p>
+            <p>Den är typ samma som HTTP, fast den är krypterad och säkrare.</p>
+            <img src="banner-772x250.png" style="width:40%; height:40%;"> <!--Bild fast gjorde den mindre-->
+        </div>
     </body>
 </html>
