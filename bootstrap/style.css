@@ -17,7 +17,7 @@ body{
 }
 
 .axel-img{
-    width:auto;
+    max-width:100%;
     height:auto;
     display: block;
     border: 20px solid;
@@ -25,5 +25,5 @@ body{
 }
 
 .axel-h1 h1{
-    color:red;
+    color:rgb(255, 124, 124);
 }
