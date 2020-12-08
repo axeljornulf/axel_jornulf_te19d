@@ -50,7 +50,9 @@ def geometrical_calculator(sideA,sideB,height):
 
 n = 0
 
-while n != 5:
+amount = []
+
+while n != 2:
     try:
         a = int(input("Ange rektangelns första sida: "))
     except ValueError:
@@ -82,4 +84,8 @@ while n != 5:
         h += 1
     antalHeight.append(h)
     n += 1
+
+
+for j in n:
+    geometrical_calculator(a, b, h)
 
