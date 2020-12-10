@@ -3,7 +3,7 @@ a {
 }
 
 body{
-    background-color:rgb(121, 121, 145);
+    background-color:rgb(158, 158, 209);
 }
 
 .axel-button{
@@ -13,7 +13,7 @@ body{
 
 .axel-container{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(197, 115, 255);
+    background-color: rgb(190, 183, 253);
 }
 
 .axel-img{
@@ -21,9 +21,18 @@ body{
     height:auto;
     display: block;
     border: 20px solid;
-    border-color:rgb(197, 115, 255);
+    border-color:rgb(190, 183, 253);
 }
 
 .axel-h1 h1{
     color:rgb(255, 124, 124);
+}
+
+.navbar{
+    color:rgb(24, 24, 24);
+}
+
+footer{
+    text-align: center;
+    background-color:rgba(61, 61, 61, 0.411);
 }
