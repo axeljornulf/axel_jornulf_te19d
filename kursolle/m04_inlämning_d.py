@@ -8,27 +8,32 @@ antalArea = []
 antalSideA = []
 antalSideB = []
 antalHeight = []
+volume = []
 
-def geometrical_calculator(sideA,sideB,height):
+def geometrical_calculator(height):
     while processor != False:
 
-        area = sideA * sideB
+        for sum1,sum2 in zip(antalSideA,antalSideB):
+            antalArea.append(sum1 * sum2)
 
-        antalArea.append(area)
-
+        '''
         print()
         print(f"Rektangeln har sidorna {sideA} och {sideB} le, vilketgör att arean är {area} ae")
-
+        
         if sideA == sideB:
             print()
             print("Eftersom bägge sidorna är lika långa så är denna rektangel en kvadrat.")
+        '''
+
 
         print()
         print("Höjden | Volymen")
         print("-----------------")
-        for i in range(1, height):  # i = höjden
-            v = area * i
-            print('{:>8}'.format(f"{i} |") + '{:>8}'.format(v))
+        for i in antalHeight:  # i = höjden
+            for j,v in zip(antalArea, antalHeight):
+                volume.append(j * v)
+            for y in volume:
+                print('{:>8}'.format(f"{i} |") + '{:>8}'.format(y))
 
         print()
         askUser = input("Continue? Y/N: ")
@@ -50,9 +55,7 @@ def geometrical_calculator(sideA,sideB,height):
 
 n = 0
 
-amount = []
-
-while n != 2:
+while n != 3:
     try:
         a = int(input("Ange rektangelns första sida: "))
     except ValueError:
@@ -85,7 +88,4 @@ while n != 2:
     antalHeight.append(h)
     n += 1
 
-
-for j in n:
-    geometrical_calculator(a, b, h)
-
+geometrical_calculator(h)
