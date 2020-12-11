@@ -36,3 +36,8 @@ footer{
     text-align: center;
     background-color:rgba(61, 61, 61, 0.411);
 }
+
+.buttons{
+    position:fixed;
+    left:5%;
+}
