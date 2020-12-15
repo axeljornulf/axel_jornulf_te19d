@@ -10,7 +10,7 @@ antalSideB = []
 antalHeight = []
 volume = []
 
-def geometrical_calculator(height):
+def geometrical_calculator():
     while processor != False:
 
         for sum1,sum2 in zip(antalSideA,antalSideB):
@@ -25,37 +25,25 @@ def geometrical_calculator(height):
             print("Eftersom bägge sidorna är lika långa så är denna rektangel en kvadrat.")
         '''
 
+        for j, v in zip(antalArea, antalHeight):
+            volume.append(j * v)
 
         print()
         print("Höjden | Volymen")
         print("-----------------")
-        for i in antalHeight:  # i = höjden
-            for j,v in zip(antalArea, antalHeight):
-                volume.append(j * v)
-            for y in volume:
-                print('{:>8}'.format(f"{i} |") + '{:>8}'.format(y))
+
+        for i,y in zip(antalHeight,volume):
+            print('{:>8}'.format(f"{i} |") + '{:>8}'.format(y)) # i = höjden
 
         print()
-        askUser = input("Continue? Y/N: ")
+        print("Dina beräkningar: ")
+        print("Area:", antalArea, "ae")
+        print("Sida A:", antalSideA, "le")
+        print("Side B:", antalSideB, "le")
+        print("Height:", antalHeight, "le")
+        break
 
-        if askUser == "N" or askUser == "n":
-            print()
-            print("Dina beräkningar: ")
-            print("Area:", antalArea, "ae")
-            print("Sida A:", antalSideA, "le")
-            print("Side B:", antalSideB, "le")
-            print("Height:", antalHeight, "le")
-            break
-        elif askUser == "Y" or askUser == "y":
-            continue
-        else:
-            print("Ange Y eller N!")
-            print("Automatiskt stänger ner.")
-            break
-
-n = 0
-
-while n != 3:
+while processor == True:
     try:
         a = int(input("Ange rektangelns första sida: "))
     except ValueError:
@@ -82,10 +70,17 @@ while n != 3:
         h = 11
     elif h < 0:
         print("Höjden kan inte vara negativt!")
-        h = 2
-    else:
-        h += 1
+        h = 1
     antalHeight.append(h)
-    n += 1
 
-geometrical_calculator(h)
+    print()
+    askUser = input("Vill du ange flera räkningar? Y/N: ")
+
+    if askUser == "Y" or askUser == "y":
+        continue
+    elif askUser == "N" or askUser == "n":
+        geometrical_calculator()
+        break
+    else:
+        print("Ange Y eller N!")
+        continue
