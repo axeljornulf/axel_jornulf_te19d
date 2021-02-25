@@ -1,0 +1,30 @@
+Sorterade listan, högsta ligger överst.
+94 | Rut
+90 | Folke
+89 | Selma
+84 | Ellen
+79 | Milo
+76 | Victoria
+74 | Matteo
+67 | Luna
+56 | Hedvig
+56 | Milo
+51 | Clara
+47 | Walter
+45 | Mohammed
+42 | Cilla
+40 | Maryam
+39 | Luna
+32 | Folke
+27 | Milo
+27 | Lova
+22 | Hedvig
+13 | Ulla
+10 | Noomi
+ 8 | David
+ 4 | Ivan
+ 1 | Hedvig
+== Summering ==
+Max resultat: Rut, 94 poäng.
+Min resultat: Hedvig, 1 poäng.
+Medelvärdet: 46.92
