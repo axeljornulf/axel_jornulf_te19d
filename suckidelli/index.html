@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://koda.nu/simple.js">
+
+        var currentLevel = level1;
+        var player = {x: 1000, y: 150, speed: 10};
+        var zombies = [];
+        var i = 0;
+
+        while(i < 25)
+        {
+            zombies.push({x: random(totalWidth), y: random(totalHeight), speed: 6});
+
+            i += 1;
+        }
+
+        function update()
+        {
+            currentLevel();
+        }
+
+        function level1()
+        {
+            picture(0,0, "menu_screen.png", totalWidth, totalHeight);
+            document.onkeypress = function(key_dtl) 
+            {
+                currentLevel = level2;
+            }
+
+            if(mouse.left || mouse.right)
+            {
+                currentLevel = level2;
+            }
+        }
+
+        function level2()
+        {
+            clearScreen();
+            
+            document.body.style.backgroundImage = "url('freelance_bg.png')";
+
+            var i = 0;
+            while(i < 25)
+            {
+                var zombie = zombies[i];
+                picture(zombie.x,zombie.y, "jerma_zombie.png");
+
+                if(zombie.x < player.x)
+                {
+                    zombie.x += zombie.speed;
+                }
+                else
+                {
+                    zombie.x -= zombie.speed;
+                }
+
+                if(zombie.y < player.y)
+                {
+                    zombie.y += zombie.speed;
+                }
+                else
+                {
+                    zombie.y -= zombie.speed;
+                }
+
+                if(zombie.y > totalHeight-20) 
+                {
+                    zombie.speed = -zombie.speed;
+                }
+
+                if(zombie.x > totalWidth-30)
+                {
+                    zombie.speed = -zombie.speed;
+                }
+
+                if(zombie.y < 0)
+                {
+                    zombie.speed = -zombie.speed;
+                }
+
+                if(zombie.x < 0)
+                {
+                    zombie.speed = -zombie.speed;
+                }
+
+                if(distance(player, zombie) < 10)
+                {
+                    alert("Game over");
+                    stopUpdate();
+                }
+
+                i += 1;
+            }
+
+            picture(player.x, player.y, "nixon.png");
+
+            if(keyboard.w)
+            {
+                player.y -= player.speed;
+            }
+
+            if(keyboard.s)
+            {
+                player.y += player.speed;
+            }
+
+            if(keyboard.d)
+            {
+                player.x += player.speed;
+            }
+
+            if(keyboard.a)
+            {
+                player.x -= player.speed;
+            }
+
+            if(player.x == totalWidth)
+            {
+                player.x = totalWidth-10;
+            }
+
+            if(player.x < 0)
+            {
+                player.x = 0;
+            }
+
+            if(player.y == totalHeight)
+            {
+                player.y = totalHeight-10;
+            }
+
+            if(player.y < 0)
+            {
+                player.y = 0;
+            }
+            
+            if(keyboard.space)
+            {
+                player.speed += 5;
+            }
+            else if(player.speed > 20)
+            {
+                player.speed = 10;
+            }
+        }
+        </script>
+    </head>
+</html>
