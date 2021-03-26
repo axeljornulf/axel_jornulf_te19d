@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://koda.nu/simple.js">
 
         var currentLevel = level1;
@@ -8,7 +9,7 @@
         var zombies = [];
         var i = 0;
 
-        while(i < 25)
+        while(i < 10)
         {
             zombies.push({x: random(totalWidth), y: random(totalHeight), speed: 6});
 
@@ -41,7 +42,7 @@
             document.body.style.backgroundImage = "url('freelance_bg.png')";
 
             var i = 0;
-            while(i < 25)
+            while(i < 10)
             {
                 var zombie = zombies[i];
                 picture(zombie.x,zombie.y, "jerma_zombie.png");
@@ -86,11 +87,16 @@
 
                 if(distance(player, zombie) < 10)
                 {
-                    alert("Game over");
-                    stopUpdate();
+                    currentLevel = gameOver;
                 }
 
                 i += 1;
+            }
+
+            function gameOver()
+            {
+                picture(0,0, "gameover.png")
+                stopUpdate();
             }
 
             picture(player.x, player.y, "nixon.png");
