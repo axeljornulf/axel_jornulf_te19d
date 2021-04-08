@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d933113-24c3-4687-9279-94f6fa79ff23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/moment5/Bank applikation/bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moment5/Bank applikation/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moment5/Bank applikation/function_sucki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7d933113-24c3-4687-9279-94f6fa79ff23" name="Default Changelist" comment="doesn't work" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,6 +130,19 @@
       <option name="presentableId" value="Default" />
       <updated>1617092650417</updated>
     </task>
+    <task id="LOCAL−00001" summary="doesn't work">
+      <created>1617901354142</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1617901354142</updated>
+    </task>
+    <task id="LOCAL−00002" summary="doesn't work">
+      <created>1617901379250</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1617901379250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,5 +156,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="doesn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="doesn't work" />
   </component>
 </project>
