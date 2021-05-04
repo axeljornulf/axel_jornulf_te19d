@@ -1,4 +1,6 @@
 from config import *
+from tkinter import *
+
 
 def balance():
     balance = 0
@@ -16,6 +18,7 @@ def validate_int(output, error_msg):
     return value
 
 def print_transactions():
+
     rad = 0
     summa = 0
     header = ("\nDina transaktioner:"
@@ -55,3 +58,8 @@ def add_transaction(transaction, toFile = False):
 def write_transaction_to_file(transaction):
     with open(filename, "a") as f:
         f.write("{}\n".format(transaction))
+
+def choice_4(): #rensar/återställer txt filen
+    os.remove(filename)
+    transactions.clear()
+    read_file()
