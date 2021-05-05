@@ -52,8 +52,10 @@ def btn3_clicked(): #Dra ut
         add_transaction(-withdraw, True)
     elif withdraw < 0:
         messagebox.showerror('Notice!', 'OBS: Måste vara större än 0!')
+        print()
     else:
         messagebox.showerror('Utdraget kan inte vara större än saldot. Medges ej.')
+        print()
 
 #meny text
 menu = Label(root, text=
