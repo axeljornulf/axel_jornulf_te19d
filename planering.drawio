@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-26T08:44:06.893Z" agent="5.0 (Windows)" etag="jhsz9vQ7FRQXqWJnqHAO" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-05T09:19:37.512Z" agent="5.0 (Windows)" etag="pSD2hwyEbAnZxPKpqsyO" version="14.6.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
             <mxPoint x="240" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cxeUFJNqoi-E44_5r62y-8" value="Gemför kön" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="cxeUFJNqoi-E44_5r62y-8" value="Jemför kön" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="320" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cxeUFJNqoi-E44_5r62y-9" value="Nationala dödsräkning." style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -56,7 +56,7 @@
             <mxPoint x="330" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cxeUFJNqoi-E44_5r62y-13" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Gemför mellan kommuner och beräkna medianen.&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="cxeUFJNqoi-E44_5r62y-13" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Jemför mellan kommuner och beräkna medianen.&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="340" y="400" width="80" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cxeUFJNqoi-E44_5r62y-14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="cxeUFJNqoi-E44_5r62y-8" edge="1">
