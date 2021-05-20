@@ -25,7 +25,7 @@ def choice_1(): #val 1
 
     lbl = "Smittade \nMän", "Män i \nintensivvård", "Smittade \nKvinnor", "Kvinnor i \nintensivvård" #etiketter
 
-    df = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\Gender_Data.csv') #läser csv filet
+    df = pd.read_csv(r'Dataprojekt\Gender_Data.csv') #läser csv filet
 
     #summerar smittning
     mänSmittad = df['Total_Cases'].iloc[0:1].sum()
@@ -70,7 +70,7 @@ def choice_1(): #val 1
 def sub_choice1(): #Delar upp i åldersgrupp via val 1
     lbl = "0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80-89", "90+" #ålder etiketter
 
-    df = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\National_Total_Deaths_by_Age_Group.csv')
+    df = pd.read_csv(r'Dataprojekt\National_Total_Deaths_by_Age_Group.csv')
 
     #tillsätter data i lista
     for i in df['Total_Cases']:
@@ -96,8 +96,8 @@ def sub_choice1(): #Delar upp i åldersgrupp via val 1
 
 def choice_2(): #funktionen visar nationala dödsräkning
 
-    df = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\National_Daily_Deaths.csv')
-    df2 = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\Regional_Daily_Cases.csv')
+    df = pd.read_csv(r'Dataprojekt\National_Daily_Deaths.csv')
+    df2 = pd.read_csv(r'Dataprojekt\Regional_Daily_Cases.csv')
 
     #tillsätter data i listor
     for i in df["National_Daily_Deaths"]:
@@ -161,7 +161,7 @@ def choice_2(): #funktionen visar nationala dödsräkning
 
 def sub_choice2(): #Funktionen visar smitträkningen i varje region
 
-    df = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\Regional_Daily_Cases.csv') #Läser in csv fil
+    df = pd.read_csv(r'Dataprojekt\Regional_Daily_Cases.csv') #Läser in csv fil
 
     #etiketter för landskap och städer
     bar_label = ["Blekinge", "Dalarna", "Gotland", "Gävleborg", "Halland", "Jämtland Härjedalen", "Kalmar", "Jönköpning", "Kronoberg", "Norrbotten", "Skåne", "Stockholm", "Sörmland", "Uppsala", "Värmland", "Västerbotten", "Västernorrland", "Västmanland", "Västra Götaland", "Örebro", "Östergötland"]
@@ -206,8 +206,8 @@ def sub_choice2(): #Funktionen visar smitträkningen i varje region
 
 def choice_3(): #Funktionen visar förhållandet mellan dödligheten av COVID-19 och smitträkningen i landet
 
-    df = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\Regional_Daily_Cases.csv')
-    df2 = pd.read_csv(r'C:\Users\Axel\Documents\GitHub\axel_jornulf_te19d\Dataprojekt\National_Daily_Deaths.csv')
+    df = pd.read_csv(r'Dataprojekt\Regional_Daily_Cases.csv')
+    df2 = pd.read_csv(r'Dataprojekt\National_Daily_Deaths.csv')
     
     totalCases = df['Sweden_Total_Daily_Cases'].sum()
     totalDeaths = df2['National_Daily_Deaths'].sum()
@@ -272,7 +272,7 @@ def main(): #huvudmenyn
             break #stoppar programmet
 
         elif val == 1:
-            choice_1() #Kön funktionen
+            choice_1() #Visar kön data
 
         elif val == 2:
             choice_2() #Nationala dödsräkning
