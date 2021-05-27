@@ -21,7 +21,7 @@ def validate_choice(output, msg): #Funktionen kollar kodet för fel
             print(msg) #printar error meddelande om man väljer fel
     return value
 
-def choice_1(): #val 1
+def choice_1(): #Funktionene visar kön data
 
     lbl = "Smittade \nMän", "Män i \nintensivvård", "Smittade \nKvinnor", "Kvinnor i \nintensivvård" #etiketter
 
@@ -260,7 +260,7 @@ def main(): #huvudmenyn
                     "\n-   COVID-19 STATISTIK  -"
                     "\n-  Välkommen till menyn -"
                     "\n========================="
-                    "\n\n1 - Gemför kön"
+                    "\n\n1 - Jemför kön"
                     "\n2 - National dödsräkning"
                     "\n3 - Dödlighet och smitt förhållandet"
                     "\nExit. (0)"
