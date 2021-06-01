@@ -219,6 +219,7 @@ def choice_3(): #Funktionen visar förhållandet mellan dödligheten av COVID-19
     caseList = df['Sweden_Total_Daily_Cases'].to_numpy() #y-axel nr 1
     deathList = df2['National_Daily_Deaths'].to_numpy() #y-axel nr 2
 
+    #Tillsätter data i lista
     for i in df2['Date']:
         nddDate.append(i)
 
@@ -238,7 +239,7 @@ def choice_3(): #Funktionen visar förhållandet mellan dödligheten av COVID-19
     plt.legend()
     plt.show()
 
-    #prinar förhållander
+    #printar förhållandet
     print('Förhållandet mellan smitt- och dödligheträkning är', round(ratio,2))
 
     inputThis = "Tryck på 0 för att återgå till huvudmenyn.\n"
