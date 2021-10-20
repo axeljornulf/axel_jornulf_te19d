@@ -1,0 +1,126 @@
+@import './mixins';
+
+$standard-color:saddlebrown; //standard färg
+$full-scale: 100%; //skalar bild till fullskärm
+
+@font-face { //orginal font
+    font-family: myFont;
+    src: url('/axel-jö-sass-frontpage/media/TF2secondary.ttf');
+}
+
+html,body{ //fyller hela sidan
+    background-color:$standard-color;
+    height:$full-scale;
+    margin:0;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    background: $standard-color;
+    font-family: myFont;
+    width:$full-scale;
+    text-align: center;
+}
+
+header{
+    @include fixedSucky(); //ger position till header
+    text-align: center;
+    justify-content: center;
+}
+
+//Logo
+.navbar{
+    @include fixedSucky(); //ger position till logo
+    @include imgResize(50%); //fixar bilden
+    background-color:$standard-color;
+    overflow: hidden;
+}
+
+//Bakgrunden
+.mainBody{
+
+    .main{ //position
+        position:relative;
+        width:$full-scale;
+        height:$full-scale;
+        top:0;
+        left:0;
+    }
+//Nedanför ger jag bara position till bilderna. För att all ska vara i samma storlek, hittade jag en bra förhållande mellan bildens dimension och vertikala bredden.
+//vertikala bredden adderas med 58 i varje element
+    .scout{
+        @include positionFix(58vw);
+    }
+
+    .shitpiss{
+        @include positionFix(116vw);
+    }
+
+    .pyro{
+        @include positionFix(174vw);
+    }
+
+    .demoman{
+        @include positionFix(232vw);
+    }
+
+    .heavy{
+        @include positionFix(290vw);
+    }
+
+    .engineer{
+        @include positionFix(348vw);
+    }
+
+    .medic{
+        @include positionFix(406vw);
+    }
+
+    .sniper{
+        @include positionFix(464vw);
+    }
+
+    .spy{
+        @include positionFix(522vw);
+    }
+
+//centrerar all objekt
+    @include centrifyContent(58vw, column);
+    min-height: $full-scale;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+
+#intro{ //animation åt den lilla headern
+    font-family: myFont;
+    @include fadeInText(3s);
+    @include alignText();
+}
+
+#plan{
+    //Lilla headern
+    @include fadeInText(5s);
+    @include centrifyContent(15vw, row);
+    @include alignText();
+    z-index:1;
+    font-family: myFont;
+    background-color: rgba(175, 93, 0, 0.637);
+    width:$full-scale;
+    position:fixed;
+    top:15.9vw;
+    width: $full-scale;
+
+    .scrapper{ //Text format
+        .texts{
+            white-space: pre;
+            font-weight: bold;
+        }
+    }
+}
+
+img{
+    justify-content: center; //centrerad bild som standard
+}

@@ -1,0 +1,48 @@
+@mixin pickleCenter($direction, $background, $height) { /*-Annat namn för funktion. -Generaliserar koden. -Kan ta in värden, som en vanlig funktion */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+    height:$height;
+}
+
+@mixin infoHeight($color){
+    display:flex;
+    align-items: center;
+    background-color: $color;
+}
+
+@mixin footerStuff($color, $textColor){
+    background: $color;
+    text-align: center;
+    font-style: bold;
+    color:$textColor;
+    display:flex;
+    justify-content: center;
+}
+
+/*
+
+@mixin  fout_size ($size) {
+                    ^variable
+    fout-size: $size;
+}
+
+.container {
+    @include fout_size(400px);
+}
+
+*/
+
+header {
+
+    @include pickleCenter(column, rgb(52, 191, 238), 50vh);
+    color:$textColor;
+    button {
+        background: $primaryBtn;
+        &::after {
+            content:">:)";
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@mixin centrifyContent($value, $property){ //formar en column eller rad för en element
+    display:flex;
+    flex-direction: $property;
+    height:$value;
+}
+
+@mixin alignText(){ //funktion som får all text att att vara i mitten av elementen
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@mixin fixedSucky(){ //Mixin är för att ge position till en element
+    position:static;
+    top:0;
+}
+
+@mixin imgResize($width-value){ //mixin ger en width till bilden i en element
+    img{
+        height:100%;
+        width:$width-value;
+    }
+}
+
+@mixin fadeInText($time){ //fade in animation
+
+    animation: fadeIn linear $time forwards;
+}
+
+@keyframes fadeIn{ //skapar animation
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@mixin positionFix($value){ //Ger absolut position och fixar storlek till element
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:$value;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>TF2.info | Home</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            var TF2 = 'Team Fortress 2 is a multiplayer first person shooter game\ndeveloped and published by Valve Software. It is the sequel to\nthe 1996 Quake mod, and its remake in the Gold Source engine: Team Fortress Classic.\nIn October 2007, Team Fortress 2 was released on the Orange Box with Half-Life 2\nand Portal. Team Fortress 2 remains as one of the most revolutionary games in FPS.';
+            var paragraph1 = 'Born and raised in Boston, Massachusetts USA, the Scout\nis a fast-running scrapper with an "in-your-face" attitutde. He is\nthe fastest and most mobile mercenary on the battlefield unassisted.\nHis doublejump leaves slower opponents struggling to keep up and helps\nhim navigate the terrain while dodging oncoming bullets and projectiles.';
+            var paragraph2 = 'The Soldier is a crazed, jingoistic patriot from Midwest, USA.\nTough and well armed, he is versatile, capable of both offense\nand defense, and a great starter class to get familiar with. Well-balanaced\nand possessing both survivability and mobility, the Soldier is considered\nas one of the most flexible classes in TF2. The Soldier is well known for his\nspectacular rocket jump.'
+            var paragraph3 = 'The Pyro is a mumbling pyromaniac of indeterminate origin who\nhas a burning passion for all things fire related. As shown in\n"Meet the Pyro", the Pyro appears to be insane and delusional, living in a\nutopian fantasy world known as "Pyroland". The Pyro battles with a homemade\nflamethrower, and is the ideal class for checking for impostors.';
+            var paragraph4 = 'The Demoman is a self-described black Scottish cyclops and a\nscrumpy-swilling demolition expert from Ullapool, Scotland, who is\none of the most versatile members of the team. A master of explosives,\nthe Demoman strategically deals massive ammounts of indirect and mid-range\nsplash damage. Although a demolishon man, many would be surprised by his excellent\nmelee prowess.';
+            var paragraph5 = "The Heavy Weapons Guy, more commonly known as 'The Heavy', is a\ntowering hulk of a man hailing from the USSR. He is the largest and\npossibly the most dangerous class in Team Fortress 2. Boasting the\nmost default health and devestating firepower from his trusty Minigun,\nthe Heavy is no pushover. The Heavy's Minigun can inflict heavy damage at a high rate of fire.";
+            var paragraph6 = "The Engineer is a soft-spoken, amiable Texan from Bee Cave, Texas, USA\nwith an interest in all mechanical things. He specializes in constructing\nand maintaining buildings that provide support to his team, rather\nthan fighting in the front lines, making him the most suitable for defense.\nThe Engineer's various gadgets include an automated turret called a Sentry gun,\na healing Dispenser, and a pair of teleporters.";
+            var paragraph7 = "The Medic is a Teutonic man of medicine from Stuttgart, Germany. While he has\ntenous adherence to medical ethics, he is nonetheless the\nprimary healing class of the team. Although the Medic's syringe gun and\nbonesaw aren't the most excellent weapons for direct combat, he can\ntypically still be found near the front lines, healing wounded teammates while\ntrying to stay out of line of fire.";
+            var paragraph8 = "Hailing from the oldest country of New Zealand, raised in the unforgiving\nAustralian outback, the Sniper is a tough and ready crack shot.\nThe Sniper's main role on the battlefield is to pick off important enemy\ntargets from afar usuing his sniper rifle and its ability to deal\nguaruanteed critical hits with a headshot (with some exceptions). He is effective\nat long range, and weak at close";
+            var paragraph9 = "Hailing from an indeterminate region of France, the Spy is an enthusiast\nof sharp suits and even sharper knives. Using a unique array of\ncloaking watches, he can render himself invisible or even fake his own death\nleaving unaware opponents off-guard. His disguise kit lets him take form of any class on\neither team, allowing him to blend in. He can even sap the Engineer's buildings with his sapper.";
+
+            $(function() {
+                $(window).scroll(function(){
+                    if($(window).scrollTop() > $('.main').offset().top && $(window).scrollTop() < $('.main').offset().top + $('.main').outerHeight(true)){
+                        $('.scrapper h2').text('What is TF2?');
+                        $('.texts').text(TF2);
+                    }else if($(window).scrollTop() > $('.scout').offset().top && $(window).scrollTop() < $('.scout').offset().top + $('.scout').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Scout!');
+                        $('.texts').text(paragraph1);
+                    }else if($(window).scrollTop() > $('.shitpiss').offset().top && $(window).scrollTop() < $('.shitpiss').offset().top + $('.shitpiss').outerHeight(true)){ //Kan inte ta '.soldier' för ngn anledning?????
+                        $('.scrapper h2').text('Meet the Soldier!');
+                        $('.texts').text(paragraph2);
+                    }else if($(window).scrollTop() > $('.pyro').offset().top && $(window).scrollTop() < $('.pyro').offset().top + $('.pyro').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Pyro!');
+                        $('.texts').text(paragraph3);
+                    }else if($(window).scrollTop() > $('.demoman').offset().top && $(window).scrollTop() < $('.demoman').offset().top + $('.demoman').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Demoman!');
+                        $('.texts').text(paragraph4);
+                    }else if($(window).scrollTop() > $('.heavy').offset().top && $(window).scrollTop() < $('.heavy').offset().top + $('.heavy').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Heavy!');
+                        $('.texts').text(paragraph5);
+                    }else if($(window).scrollTop() > $('.engineer').offset().top && $(window).scrollTop() < $('.engineer').offset().top + $('.engineer').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Engineer!');
+                        $('.texts').text(paragraph6);
+                    }else if($(window).scrollTop() > $('.medic').offset().top && $(window).scrollTop() < $('.medic').offset().top + $('.medic').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Medic!');
+                        $('.texts').text(paragraph7);
+                    }else if($(window).scrollTop() > $('.sniper').offset().top && $(window).scrollTop() < $('.sniper').offset().top + $('.sniper').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Sniper!');
+                        $('.texts').text(paragraph8);
+                    }else if($(window).scrollTop() > $('.spy').offset().top && $(window).scrollTop() < $('.spy').offset().top + $('.spy').outerHeight(true)){
+                        $('.scrapper h2').text('Meet the Spy!');
+                        $('.texts').text(paragraph9);
+                    }else{
+                        $('.scrapper h2').text('What is TF2?');
+                        $('.texts').text(TF2);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="./media/WOOO.mp4"><img src="./media/logo.png"></a>
+            </div>
+        </header>
+        <div id="intro">
+            <h1>MEET THE MERCS!</h1>
+        </div>
+        <div id="plan">
+            <div class="scrapper">
+                <h2></h2>
+                <p class="texts"></p>
+            </div>
+        </div>
+        <div class="mainBody">
+            <img src="media/gallery1.jpg" class="main">
+            <img src="media/scout.png" class="scout">
+            <img src="media/soldier.jpg" class="shitpiss">
+            <img src="media/pyro.png" class="pyro">
+            <img src="media/demoman.png" class="demoman">
+            <img src="media/heavy.png" class="heavy">
+            <img src="media/engineer.png" class="engineer">
+            <img src="media/medic.png" class="medic">
+            <img src="media/sniper.png" class="sniper">
+            <img src="media/spy.png" class="spy">
+        </div>
+    </body>
+    <footer>Powered by JQuery</footer>
+</html>
