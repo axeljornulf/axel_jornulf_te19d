@@ -54,7 +54,7 @@ header{
     }
 
     .shitpiss{
-        @include positionFix(116vw);
+        @include positionFix(116vw); //Kan inte döpa den till .soldier för någon anledning, ananrs körs inte skripten
     }
 
     .pyro{
