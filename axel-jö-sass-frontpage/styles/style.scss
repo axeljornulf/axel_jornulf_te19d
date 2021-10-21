@@ -8,7 +8,7 @@ $full-scale: 100%; //skalar bild till fullskärm
     src: url('/axel-jö-sass-frontpage/media/TF2secondary.ttf');
 }
 
-html,body{ //fyller hela sidan
+html,body{ //fyller hela sidan så att borders skapas inte
     background-color:$standard-color;
     height:$full-scale;
     margin:0;
