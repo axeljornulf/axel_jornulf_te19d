@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    background-color:rgb(158, 148, 164)
+}
+
+#SLIDE_BG{
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100vh;
+    background-position: center center;
+    background-size:cover;
+    animation:slideBg 16s ease-in-out infinite;
+}
+
+@keyframes slideBg {
+    0%, 100%{
+        background-image: url('slideshow/depositphotos_25041805-stock-photo-psychologist-with-patient.jpg');
+    }
+
+    25%{
+        background-image: url('slideshow/cc31dbc38cf700a23061f21274d9e7e2.jpg');
+    }
+
+    50%{
+        background-image: url('icon2.png');
+    }
+
+    75%{
+        background-image: url('964.jfif');
+    }
+}
+
+.slide{
+    color:black;
+}
+
+#center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption{
+    background-color: rgba(158, 148, 164, 0.5);
+}
+
+.aboutus{
+    display:block;
+    padding:150px 0;
+    background: rgba(255, 255, 255,0.5);
+}
