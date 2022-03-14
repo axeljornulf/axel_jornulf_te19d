@@ -9,3 +9,4 @@ for item in Array:
         continue
 
 print(hits)
+
