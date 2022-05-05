@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\axel.jornulf\\Documents\\GitHub\\axel_jornulf_te19d\\webapi\\webapi.csproj",
+  "FilePath": "c:\\Users\\axel.jornulf\\Documents\\GitHub\\axel_jornulf_te19d\\webapi - kopia\\webapi___server.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "webapi",
+  "RootNamespace": "webapi___server",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
