@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cheese compendium</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="subforum-title">
+                <img class="forumlogo" src="/cheese forum/misc/logo.png">
+            </div>
+            <div class = "subforum-navbar">
+                <h3>| <a href="">Categories</a> | <a href="">>Threads</a> | <a href="">>Members</a> | <a href="">>Staff team</a> | <a href="">>Contact</a> | </h3>
+            </div>
+            <div class="navbar">
+                <nav id="navigation" class="navigation hide">
+                    <ul class="nav-list">
+                        <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                        <li class="nav-item">
+                            <a href="#">Latest status updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="posts.html">Threads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            </div>
+            <!--Search bar sucki-->
+            <div class="search-box">
+                <div>
+                    <select name="" id="">
+                        <option value="general">General</option>
+                        <option value="threads">Threads</option>
+                        <option value="topic">Topics</option>
+                        <option value="replies">Replies</option>
+                    </select>
+                    <input type="text" name="q" id="" placeholder="search">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+
+            <!--Navigation-->
+            <div class="navigate">
+                <span><a href="index.html">Cheese Compendium - Forums</a> >> <a href="#">Status updates</a></span>
+            </div>
+
+            <div class="topic-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Status (Read 128 times)</div>
+                </div>
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">MonkeyandBananas2</a></div>
+                        <div>Member</div>
+                        <img src="../psd/profilepic.png" alt="">
+                        <div>Posts: <u>428</u></div>
+                        <div>Topics: <u>55</u></div>
+                        <div>React points: <u>7172</u></div>
+                    </div>
+                    <div class="content">
+                        Shidding rn. Ate too much cheese.
+                        <br>I think I need to see a doctor.
+                        <br><br>
+                        Not kidding I think I need to see one.
+                        <br><br>
+                        <hr>
+                        Posted at 12:28 PM on <b>14 May 2022</b>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Comment input-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment something"></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+
+            <!--Show comments-->
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="AnotherUser"><a href="#">RatFucker200</a></div>
+                        <div>Contributor</div>
+                        <img src="../psd/profilepic.jpg" alt="">
+                        <div>Posts: <u>1428</u></div>
+                        <div>Topics: <u>292</u></div>
+                        <div>React points: <u>20022</u></div>
+                    </div>
+                    <div class="content">
+                        I don't fucking care fuck you whore.
+                        <br>Eat ass while you're at it.
+                        <br><br>
+                        <hr>
+                        Posted at 12:30 PM on <b>14 May 2022</b>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Reply input-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="comment" id="" placeholder="reply with something"></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+
+            <!--BUFFER-->
+            <div class="topic-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Status (Read 208 times)</div>
+                </div>
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">BobinTheGoblin</a></div>
+                        <div>Member</div>
+                        <img src="../psd/profilepic3.png" alt="">
+                        <div>Posts: <u>752</u></div>
+                        <div>Topics: <u>90</u></div>
+                        <div>React points: <u>8012</u></div>
+                    </div>
+                    <div class="content">
+                        Just got fired from my job. Idk what I did wrong.
+                        <br>
+                        America is such a fascist regime, I'm apparently not allowed to fart on my boss' desk.
+                        <br><br>
+                        <hr>
+                        Posted at 9:28 PM on <b>13 May 2022</b>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Comment input-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment something"></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+            
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="AnotherUser"><a href="#">ifartinyoface</a></div>
+                        <div>Moderator</div>
+                        <img src="../psd/profilepic4.PNG" alt="">
+                        <div>Posts: <u>2928</u></div>
+                        <div>Topics: <u>229</u></div>
+                        <div>React points: <u>4412</u></div>
+                    </div>
+                    <div class="content">
+                        L
+                        <br><br>
+                        <hr>
+                        Posted at 10:55 PM on <b>13 May 2022</b>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Reply input-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="comment" id="" placeholder="reply with something"></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+        </div>
+        <footer>
+            <span>&copy; &nbsp; WeWillSueYou.com | 2022</span>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
