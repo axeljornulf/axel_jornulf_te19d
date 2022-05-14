@@ -17,9 +17,9 @@
                 <h3>| <a href="">Categories</a> | <a href="">>Threads</a> | <a href="">>Members</a> | <a href="">>Staff team</a> | <a href="">>Contact</a> | </h3>
             </div>
             <div class="navbar">
-                <nav class="navigation hide">
+                <nav id="navigation" class="navigation hide">
                     <ul class="nav-list">
-                        <span class="close-icon"><i class="fa fa-close"></i></span>
+                        <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                         <li class="nav-item">
                             <a href="#">About us</a>
                         </li>
@@ -27,11 +27,24 @@
                             <a href="#">Options</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">My Account</a>
+                            <a href="posts.html">Threads</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="" class="bar-icon"><i class="fa fa-bars"></i></a>
+                <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            </div>
+            <!--Search bar sucki-->
+            <div class="search-box">
+                <div>
+                    <select name="" id="">
+                        <option value="general">General</option>
+                        <option value="threads">Threads</option>
+                        <option value="topic">Topics</option>
+                        <option value="replies">Replies</option>
+                    </select>
+                    <input type="text" name="q" id="" placeholder="search">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
             </div>
         </header>
         <div class="container">
@@ -46,16 +59,16 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Rules and regulations</a></h1>
+                        <p>Read all of these before posting</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>3 posts | 3 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
-                        <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
+                        <b><a href="">Last post</a></b> by <a href="">Administrator</a>
                         <br>
-                        on <small>05 May 2022</small>
+                        on <small>12 Jan 2019</small>
                     </div>
                 </div>
                 <div class="subforum-row">
@@ -63,16 +76,16 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Cheese of the month</a></h1>
+                        <p>Every month a poll will be hold about a specific cheese that's hailed for an entire monht.</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>233 posts | 233 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
-                        <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
+                        <b><a href="">Last post</a></b> by <a href="">Administrator</a>
                         <br>
-                        on <small>05 May 2022</small>
+                        on <small>01 May 2022</small>
                     </div>
                 </div>
                 <hr class="subforum-devider">
@@ -86,11 +99,11 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Cheese discussion</a></h1>
+                        <p>Discuss anything about cheese here.</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>20021 posts | 9922 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
                         <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
@@ -103,16 +116,16 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Cheese rating</a></h1>
+                        <p>Critique and post your reviews about cheese here</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>11290 posts | 600 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
-                        <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
+                        <b><a href="">Last post</a></b> by <a href="">ifartinyoface</a>
                         <br>
-                        on <small>05 May 2022</small>
+                        on <small>14 May 2022</small>
                     </div>
                 </div>
                 <div class="subforum-row">
@@ -120,16 +133,16 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Cheese recipes</a></h1>
+                        <p>Share a recipe that includes or is about cheese</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>672 posts | 200 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
-                        <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
+                        <b><a href="">Last post</a></b> by <a href="">EggsandBacon22</a>
                         <br>
-                        on <small>05 May 2022</small>
+                        on <small>14 May 2022</small>
                     </div>
                 </div>
                 <hr class="subforum-devider">
@@ -142,20 +155,33 @@
                         <img class="icon" src="/cheese forum/misc/usericon.png">
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">About</a></h1>
-                        <p>PELICAAAAAAAAAAAANS</p>
+                        <h1><a href="">Cheese tutorials</a></h1>
+                        <p>Tutorials on how to make cheese</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
-                        <span>500 posts | 129 topics</span>
+                        <span>322 posts | 52 topics</span>
                     </div>
                     <div class="subforum-info subforum-column">
-                        <b><a href="">Last post</a></b> by <a href="">RatFucker200</a>
+                        <b><a href="">Last post</a></b> by <a href="">BobinTheGoblin</a>
                         <br>
-                        on <small>05 May 2022</small>
+                        on <small>20 Apr 2022</small>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Forum information-->
+        <div class="forum-info">
+            <div class="chart">
+                Cheese Compendium - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+            </div>
+            <div class="">
+                <span><u>6129</u> posts in <u>1922</u> topics by <u>2349</u> users</span><br>
+                <span>Latest post: <b><a href="#">Cheddar is overrated</a></b> on 15  May 2022 by <a href="#">FatRat333</a></span>
+            </div>
+        </div>
+        <footer>
+            <span>&copy; &nbsp; WeWillSueYou.com | 2022</span>
+        </footer>
 
         <script src="main.js"></script>
     </body>
